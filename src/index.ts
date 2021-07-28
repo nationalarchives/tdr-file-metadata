@@ -49,11 +49,13 @@ export const extractFileMetadata: TFileMetadata = async (
 
     const result: Uint8Array = sha256.finish().result!
     const checksum = bytes_to_hex(result).trim()
+    const validatedPath = path.startsWith("/") ? path.substring(1) : path
+
     metadataFromTdrFiles.push({
       checksum,
       size,
       lastModified: new Date(lastModified),
-      path,
+      path: validatedPath,
       file
     })
     processedFiles += 1

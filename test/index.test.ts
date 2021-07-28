@@ -16,6 +16,12 @@ const dummyIFileWithPath = {
   webkitRelativePath: "/a/path"
 } as IFileWithPath
 
+const dummyIFileWithPathNoForwardSlashPrepended = {
+  file: file,
+  path: "a/path",
+  webkitRelativePath: "/a/path"
+} as IFileWithPath
+
 const dummyLongerIFileWithPath = {
   file: fileLonger,
   path: "/a/path",
@@ -57,7 +63,14 @@ test("returns the correct last modified date", async () => {
 
 test("returns the correct path", async () => {
   const result = await extractFileMetadata([dummyIFileWithPath])
-  expect(result[0].path).toEqual("/a/path")
+  expect(result[0].path).toEqual("a/path")
+})
+
+test("returns the correct path when a '/' is prepended to the extracted path", async () => {
+  const result = await extractFileMetadata([
+    dummyIFileWithPathNoForwardSlashPrepended
+  ])
+  expect(result[0].path).toEqual("a/path")
 })
 
 test("returns the original file", async () => {
