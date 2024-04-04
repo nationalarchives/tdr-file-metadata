@@ -6,3 +6,5 @@ This is a library which takes an array of file objects and returns the following
 -   File size
 -   Last updated date
 -   File path
+
+Lets update the README!
