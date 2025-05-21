@@ -39,10 +39,10 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^16.0.0",
     "prettier": "3.5.3",
-    "ts-jest": "^29.3.3",
+    "ts-jest": "^29.3.4",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
-    "webpack": "^5.99.8",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
