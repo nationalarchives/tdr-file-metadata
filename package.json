@@ -29,7 +29,7 @@
     "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jest": "^29.0.1",
@@ -41,8 +41,8 @@
     "prettier": "3.6.2",
     "ts-jest": "^29.4.0",
     "ts-loader": "^9.5.2",
-    "typescript": "^5.8.3",
-    "webpack": "^5.100.2",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.0",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
